@@ -1,0 +1,467 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 15rem;
+}
+
+/* Navbar Style */
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: rgb(43, 88, 118);
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 23px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+/* Navbar Style */
+
+/* Main Styles */
+.main {
+  background-image: url(../Image/Tun\ bola.jpg);
+  height: 50rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-all {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-all {
+  padding: 100px 0;
+  color: aliceblue;
+}
+
+.main-all h1 {
+  padding: 10rem 0 25px;
+  width: 45rem;
+  font-size: 70px;
+}
+
+.main-all p {
+  width: 40rem;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.main-all button {
+  margin-top: 40px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  background: rgb(215, 188, 103);
+  border-radius: 8px;
+  border: 2px solid rgb(215, 188, 103);
+}
+
+.main-all button a,
+.service-card button a {
+  color: rgb(17, 24, 39);
+}
+/* Main Styles */
+
+/* letter Styles */
+.letter {
+  padding: 70px 0;
+  background-color: rgb(34, 34, 34);
+}
+
+.letter-info__title {
+  width: 55rem;
+  font-size: 20px;
+  line-height: 35px;
+  color: aliceblue;
+}
+
+.letter-info .author {
+  margin-top: 15px;
+  font-size: 22px;
+  color: aliceblue;
+}
+/* letter Styles */
+
+/* Services Styles */
+.services,
+.contact {
+  padding: 50px 0;
+  background-color: rgb(51, 51, 51);
+}
+
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.service-title {
+  margin: 15px 0 20px;
+  font-size: 43px;
+  font-weight: 800;
+  color: aliceblue;
+}
+
+.service-card h2 {
+  margin: 18px 0;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.service-card p {
+  margin: 0 0 10px;
+  color: aliceblue;
+}
+
+.service-card button {
+  background: rgb(215, 188, 103);
+  border-radius: 8px;
+  border: 2px solid rgb(215, 188, 103);
+  padding: 0.75rem 1rem;
+  font-size: 16px;
+}
+/* Services Styles */
+
+/* Contact Styles */
+.contact {
+  padding: 100px 0;
+}
+
+.contact-cards {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.contact-card {
+  position: relative;
+}
+
+.card-input {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-card__input label {
+  display: block;
+  margin: 10px 0;
+  color: aliceblue;
+  font-size: 18px;
+}
+
+.contact-card__input input {
+  width: 265px;
+  height: 45px;
+  padding: 10px;
+  outline: none;
+  border-radius: 8px;
+  font-size: 17px;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.contact-card__input input:focus,
+.contact-card__input textarea:focus {
+  border: 1px solid rgb(17, 80, 253);
+}
+
+#message {
+  width: 34rem;
+  padding: 10px;
+  outline: none;
+  border-radius: 8px;
+  font-size: 17px;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: rgb(255, 255, 255);
+  border: none;
+  resize: vertical;
+}
+
+.contact-card button {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  background: #d7bc67;
+  border-radius: 8px;
+  color: #111827;
+  border: 2px solid #d7bc67;
+  padding: 0.65rem 2.7rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-card h1 {
+  margin: 50px 0 70px;
+  font-size: 33px;
+  color: aliceblue;
+}
+
+.contact-card p {
+  font-size: 18px;
+  line-height: 25px;
+  color: aliceblue;
+}
+
+.contact-card__input span {
+  display: none;
+  margin-top: 5px;
+  color: red;
+}
+
+.contact-card__input span.active {
+  display: inline-block;
+}
+
+.modal {
+  position: absolute;
+  right: 35%;
+  border: 1px solid rgba(169, 169, 169, 0.336);
+  background-color: #111222;
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.modal p {
+  margin: 15px 0;
+  text-align: center;
+  color: aliceblue;
+}
+/* Contact Styles */
+
+/* About Styles */
+.about {
+  padding: 100px 0;
+  background-color: rgb(34, 34, 34);
+}
+
+.about-info h1 {
+  margin: 20px 0;
+  color: aliceblue;
+}
+
+.about-info p {
+  width: 85%;
+  font-size: 20px;
+  line-height: 30px;
+  color: aliceblue;
+}
+/* About Styles */
+
+/* Footer Styles */
+footer {
+  padding: 90px 0;
+  background-color: rgba(96, 150, 182, 0.877);
+}
+
+.footer-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo a {
+  color: #111222;
+}
+
+.footer-cards p {
+  font-size: 19px;
+  font-weight: 500;
+  color: #111222;
+}
+
+.footer-cards p a {
+  color: #111222;
+  text-decoration: underline;
+}
+/* Footer Styles */
+
+/* Media Styles */
+@media (max-width: 1170px) {
+  .container {
+    width: 90%;
+  }
+
+  /* Contact Media */
+  .contact-cards {
+    gap: 25px;
+  }
+
+  .contact-card h1 {
+    font-size: 28px;
+    margin: 50px 0 30px;
+  }
+  /* Contact Media */
+}
+
+@media (max-width: 992px) {
+  /* Main Media */
+  .main-all h1 {
+    width: 100%;
+    font-size: 50px;
+  }
+
+  .main-all p {
+    width: 100%;
+  }
+  /* Main Media */
+
+  /* Letter Media */
+  .letter-info__title {
+    width: 100%;
+  }
+  /* Letter Media */
+
+  /* Services Media */
+  .services-cards {
+    gap: 15px;
+  }
+  /* Services Media */
+
+  /* Contact Media */
+  .contact {
+    padding: 0 0 100px;
+  }
+
+  .contact-cards {
+    flex-direction: column-reverse;
+  }
+
+  .card-input {
+    flex-direction: column;
+  }
+
+  .contact-card__input input {
+    width: 100%;
+  }
+
+  #message {
+    width: 100%;
+  }
+  /* Contact Media */
+
+  /* About Media */
+  .about-info p {
+    width: 100%;
+  }
+  /* About Media */
+}
+
+@media (max-width: 776px) {
+  /* Main Media */
+  .main-all h1 {
+    font-size: 45px;
+  }
+
+  .main-all p {
+    font-size: 18px;
+  }
+  /* Main Media */
+
+  /* Letter Media */
+  .letter-info__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .letter-info .author {
+    font-size: 20px;
+  }
+  /* Letter Media */
+
+  /* Contact Media */
+  .contact-card h1 {
+    font-size: 25px;
+  }
+
+  .modal {
+    right: 25%;
+  }
+  /* Contact Media */
+
+  /* About Media */
+  .about {
+    padding: 50px 0;
+  }
+
+  .about-info p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  /* About Media */
+}
+
+@media (max-width: 480px) {
+  /* Main Media */
+  .main-all h1 {
+    font-size: 35px;
+  }
+  /* Main Media */
+
+  /* Services Media */
+  .service-title {
+    font-size: 30px;
+  }
+  /* Service Media */
+
+  /* Contact Media */
+  .modal {
+    right: 0;
+  }
+  /* Contact Media */
+
+  /* Footer Media */
+  footer {
+    padding: 50px 0;
+  }
+
+  .footer-cards {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo a {
+    font-size: 25px;
+  }
+
+  .footer-cards p {
+    font-size: 17px;
+  }
+  /* Footer Media */
+}
+/* Media Styles */
